@@ -21,5 +21,14 @@ describe("Positive testing for add.js", () => {
 
     })
 
+    it("It should sum positive and negative integers correctly", () =>{
+
+        const first = -4;
+        const second = 6;
+
+        assert.equal(add(first, second), 2);
+
+    })
+
 });
 

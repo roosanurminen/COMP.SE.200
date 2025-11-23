@@ -80,17 +80,11 @@ describe("Positive test cases for filter.js", () => {
 
 });
 
-// We don't use Lodash as oracle here since from the ecommerce project's
-// perspective, it would be better for filter to throw an error
-// instead of silently returning an empty array when given invalid inputs.
-// Silently returning an empty array would pose a risk that 
-// the customer's filtering actions don't have any effect without them realizing it.
 
 describe("Negative test cases for filter.js", () => {
 
-    it("Should return empty array when predicate is not a function", () => {
-        const array = [1, 2, 3];
-        assert.deepEqual([], filter(array, 111));
+    it("Should throw an error when the predicate is not a function", () => {
+        assert.throws(() => filter([1, 2, 3], 111), Error);
     });
 
     it("Should throw an error when the iterable is undefined", () => {

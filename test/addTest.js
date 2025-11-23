@@ -69,7 +69,7 @@ describe("Negative testing for add.js", () => {
         const augend = undefined;
         const addend = 2;
 
-        expect(() => add(augend, addend)).to.throw(error)
+        expect(() => add(augend, addend)).to.throw(Error)
     })
 
     it("It should throw error if addend is undefined", () =>{
@@ -77,7 +77,7 @@ describe("Negative testing for add.js", () => {
         const augend = 3;
         const addend = undefined;
 
-        expect(() => add(augend, addend)).to.throw(error)
+        expect(() => add(augend, addend)).to.throw(Error)
     })
 
     it("It should throw error if augend is string", () =>{
@@ -85,7 +85,7 @@ describe("Negative testing for add.js", () => {
         const augend = "6";
         const addend = 4;
 
-        expect(() => add(augend, addend)).to.throw(error);
+        expect(() => add(augend, addend)).to.throw(Error);
     })
 
     it("It should throw error if addend is string", () =>{
@@ -93,7 +93,7 @@ describe("Negative testing for add.js", () => {
         const augend = 6;
         const addend = "4";
 
-        expect(() => add(augend, addend)).to.throw(error);
+        expect(() => add(augend, addend)).to.throw(Error);
     })
 })
 

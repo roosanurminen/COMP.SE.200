@@ -77,4 +77,16 @@ describe("Positive testing for toNumber.js", () => {
     it("Should correctly parse valid octal", () => {
         assert.equal(toNumber(0o10), 8);
     });
+
+    // These were hinted by the line coverage report of c8
+    // Booleans
+    it("Should convert true to 1", () => {
+        assert.equal(toNumber(true), 1);
+    });
+
+    it("Should convert false to 0", () => {
+        assert.equal(toNumber(false), 0);
+    });
+    
+
 });

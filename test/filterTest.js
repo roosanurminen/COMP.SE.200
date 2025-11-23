@@ -80,8 +80,11 @@ describe("Positive test cases for filter.js", () => {
 
 });
 
-// Lodash as oracle
-//https://github.com/lodash/lodash/blob/3.10.1/lodash.js#L1929
+// We don't use Lodash as oracle here since from the ecommerce project's
+// perspective, it would be better for filter to throw an error
+// instead of silently returning an empty array when given invalid inputs.
+// Silently returning an empty array would pose a risk that 
+// the customer's filtering actions don't have any effect without them realizing it.
 
 describe("Negative test cases for filter.js", () => {
 
@@ -90,20 +93,14 @@ describe("Negative test cases for filter.js", () => {
         assert.deepEqual([], filter(array, 111));
     });
 
-    it("Should return empty array when the iterable is undefined", () => {
+    it("Should throw an error when the iterable is undefined", () => {
         const array = undefined;
-        const excpectedOutput = [];
-        const actualOutput = filter(array, (value) => value > 0);
-
-        assert.deepEqual(actualOutput, excpectedOutput);
+        assert.throws(() => filter(array, (value) => value > 0), Error);
     });
 
-    it("Should return empty array when the iterable is null", () => {
+    it("Should throw an error when the iterable is null", () => {
         const array = null;
-        const excpectedOutput = [];
-        const actualOutput = filter(array, (value) => value > 0);
-
-        assert.deepEqual(actualOutput, excpectedOutput);
+        assert.throws(() => filter(array, (value) => value > 0), Error);
     });
 
 

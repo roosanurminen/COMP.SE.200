@@ -80,30 +80,21 @@ describe("Positive test cases for filter.js", () => {
 
 });
 
-// Lodash as oracle
-//https://github.com/lodash/lodash/blob/3.10.1/lodash.js#L1929
 
 describe("Negative test cases for filter.js", () => {
 
-    it("Should return empty array when predicate is not a function", () => {
-        const array = [1, 2, 3];
-        assert.deepEqual([], filter(array, 111));
+    it("Should throw an error when the predicate is not a function", () => {
+        assert.throws(() => filter([1, 2, 3], 111), Error);
     });
 
-    it("Should return empty array when the iterable is undefined", () => {
+    it("Should throw an error when the iterable is undefined", () => {
         const array = undefined;
-        const excpectedOutput = [];
-        const actualOutput = filter(array, (value) => value > 0);
-
-        assert.deepEqual(actualOutput, excpectedOutput);
+        assert.throws(() => filter(array, (value) => value > 0), Error);
     });
 
-    it("Should return empty array when the iterable is null", () => {
+    it("Should throw an error when the iterable is null", () => {
         const array = null;
-        const excpectedOutput = [];
-        const actualOutput = filter(array, (value) => value > 0);
-
-        assert.deepEqual(actualOutput, excpectedOutput);
+        assert.throws(() => filter(array, (value) => value > 0), Error);
     });
 
 

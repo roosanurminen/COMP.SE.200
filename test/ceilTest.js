@@ -1,4 +1,4 @@
-import { assert } from "chai";
+import { assert, expect } from "chai";
 import ceil from "../src/ceil.js"
 
 describe("TESTS BASED ON TEST PLAN", () => {
@@ -25,6 +25,7 @@ describe("TESTS BASED ON TEST PLAN", () => {
             assert.equal(ceil(3.006, 0), 4);
         });
 
+
     });
 
     describe("Negative test cases for ceil.js", () => {
@@ -36,6 +37,7 @@ describe("TESTS BASED ON TEST PLAN", () => {
         it("Should throw an error if precision is not a number", () => {
             assert.throws(() => ceil(4.3367, "not a number"), Error);
         });
+        
     });
 
 });
@@ -59,6 +61,28 @@ describe("NEWLY ADDED TESTS FOR ceil.js", () => {
         it("Should throw an error when precision is not an integer", () => {
             assert.throws(() => ceil(4.3367, 1.5), Error);
         });
+
+        it("Should throw error if an integer is out of safe integer range", () => {
+            assert.throws(() => ceil(Number.MAX_SAFE_INTEGER + 1), Error);
+        });
+
+        it("Should throw error if a decimal is larger than the maximum value", () => {
+            assert.throws(() => ceil(Number.MAX_VALUE + 1), Error);
+        });
+
+        it("Should throw error if a decimal is smaller than the minimum value", () => {
+            assert.throws(() => ceil(Number.MIN_VALUE - 1), Error);
+        });
+
+        it("Should throw error if positive precision is out of safe integer range", () => {
+            assert.throws(() => ceil(4.3367, Number.MAX_SAFE_INTEGER + 1), Error);
+        });
+
+        it("Should throw error if negative precision is out of safe integer range", () => {
+            assert.throws(() => ceil(4.3367, Number.MIN_SAFE_INTEGER - 1), Error);
+        });
+
+
 
     });
 

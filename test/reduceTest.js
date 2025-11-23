@@ -40,49 +40,34 @@ describe('Positive test cases for reduce.js', () => {
 
 describe("Negative test cases for reduce.js", () => {
 
-    // This functions as the oracle because the behaviour is based on Lodash
-    // https://github.com/lodash/lodash/blob/3.10.1/lodash.js#L6841
-    it("Should return undefined when empty array is used without any accumulator", () => {
-        const result = reduce([], (acc, curr, key) => acc + curr);
-        assert.equal(result, undefined);
+    // For these, a combination of JS reduce and lodash reduce implementation is used as oracle
+    it("Should throw error when the array is empty and no initial accumulator is provided", () => {
+        const array = [];
+        assert.throws(() => reduce(array, (acc, curr, key) => acc + curr), Error);
     });
 
-    it("Should return the initial accumulator when non-array/object is used as collection and accumulator is provided", () => {
-        const result = reduce(42, (acc, curr, key) => acc + curr, 10);
-        assert.equal(result, 10);
+    it("Should throw error when the collection is not array or object", () => {
+        assert.throws(() => reduce(42, (acc, curr, key) => acc + curr, 0), Error);
     });
 
-    it("Should return undefined when non-array/object is used as collection and no accumulator is provided", () => {
-        const result = reduce(42, (acc, curr, key) => acc + curr);
-        assert.equal(result, undefined);
+    it("Should throw error when the collection is null", () => {
+        assert.throws(() => reduce(null, (acc, curr, key) => acc + curr, 0), Error);
     });
 
-    it("Should return undefined when trying to use a null array", () => {
-       const result = reduce(null, (acc, curr, key) => acc + curr);
-        assert.equal(result, undefined);
-    })
 
-    it("Should return undefined when trying to use undefined array", () =>{
-        const result = reduce(undefined, (acc, curr, key) => acc + curr);
-        assert.equal(result, undefined);
-    })
+    it("Should throw error when the collection is undefined", () => {
+        assert.throws(() => reduce(undefined, (acc, curr, key) => acc + curr, 0), Error);
+    });
 
-    it("Should return undefined when a non-function is used as iteratee", () =>{
+    it("Should throw error when reducer function is not provided", () => {
         const array = [1, 2, 3];
-        const result = reduce(array, null, 0);
-        assert.equal(result, undefined);
+        assert.throws(() => reduce(array), Error);
     });
 
-    it("Should return joined string when array contains undefined values and string values and no initial accumulator is provided", () =>{
-        const array = ["test1", "test2", undefined];
-        const result = reduce(array, (acc, curr, key) => acc + curr);
-        assert.equal(result, "test1test2undefined");
-    });
-
-    it("Should return NaN when array contains undefined values and numeric values and no initial accumulator is provided", () =>{
+    // The error thrown here is to ensure that no erronous values are sent to the external provider
+    it("Should throw error when the array contains undefined values and numeric values and no initial accumulator is provided", () => {
         const array = [1, 2, undefined];
-        const result = reduce(array, (acc, curr, key) => acc + curr);
-        assert.isNaN(result);
+        assert.throws(() => reduce(array, (acc, curr, key) => acc + curr), Error);
     });
 
 });

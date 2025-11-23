@@ -1,4 +1,4 @@
-import { assert } from "chai";
+import { assert, expect } from "chai";
 import add from "../src/add.js"
 
 describe("Positive testing for add.js", () => {

@@ -53,7 +53,7 @@ describe("Positive test cases for filter.js", () => {
     it("Should work correctly with object destructuring in predicate", () => {
 
         const array = [{"name": "Pekka", "age": 25}, {"name": "Jari", "age": 30}, {"name": "Linda", "age": 22}];
-         const excpectedOutput = [{"name": "Pekka", "age": 25}, {"name": "Linda", "age": 22}];
+        const excpectedOutput = [{"name": "Pekka", "age": 25}, {"name": "Linda", "age": 22}];
         const actualOutput = filter(array, ({age}) => age < 30);
 
         assert.deepEqual(actualOutput, excpectedOutput);
@@ -77,16 +77,29 @@ describe("Positive test cases for filter.js", () => {
         assert.deepEqual(actualOutput, excpectedOutput);
     });
 
-    it("Should work correctly when a null array is provided", () => {  
-        const array = null;
+
+});
+
+// Lodash as oracle
+//https://github.com/lodash/lodash/blob/3.10.1/lodash.js#L1929
+
+describe("Negative test cases for filter.js", () => {
+
+    it("Should return empty array when predicate is not a function", () => {
+        const array = [1, 2, 3];
+        assert.deepEqual([], filter(array, 111));
+    });
+
+    it("Should return empty array when the iterable is undefined", () => {
+        const array = undefined;
         const excpectedOutput = [];
         const actualOutput = filter(array, (value) => value > 0);
 
         assert.deepEqual(actualOutput, excpectedOutput);
     });
 
-    it("Should work correctly when an undefined array is provided", () => {  
-        const array = undefined;
+    it("Should return empty array when the iterable is null", () => {
+        const array = null;
         const excpectedOutput = [];
         const actualOutput = filter(array, (value) => value > 0);
 

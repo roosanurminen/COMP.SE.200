@@ -77,5 +77,21 @@ describe("Positive test cases for filter.js", () => {
         assert.deepEqual(actualOutput, excpectedOutput);
     });
 
+    it("Should work correctly when a null array is provided", () => {  
+        const array = null;
+        const excpectedOutput = [];
+        const actualOutput = filter(array, (value) => value > 0);
+
+        assert.deepEqual(actualOutput, excpectedOutput);
+    });
+
+    it("Should work correctly when an undefined array is provided", () => {  
+        const array = undefined;
+        const excpectedOutput = [];
+        const actualOutput = filter(array, (value) => value > 0);
+
+        assert.deepEqual(actualOutput, excpectedOutput);
+    });
+
 
 });

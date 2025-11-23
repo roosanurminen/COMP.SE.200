@@ -24,17 +24,29 @@ import defaultToAny from "../src/defaultToAny.js"
             assert.equal(defaultToAny(undefined, NaN, null, 50), 50);
         });
 
+        it("Should return the last default value when the value is undefined and any of the default values are not valid V1", () => {
+            assert.isNaN(defaultToAny(null, undefined, NaN));
+        });
 
-        it("Should return the last default value when the value is undefined and any of the default values are not valid", () => {
+        it("Should return the last default value when the value is undefined and any of the default values are not valid V2", () => {
             assert.isNaN(defaultToAny(undefined, null, NaN));
         });
 
-        it("Should return the last default value when the value is NaN and any of the default values are not valid", () => {
+        it("Should return the last default value when the value is NaN and any of the default values are not valid V1", () => {
             assert.isNull(defaultToAny(NaN, undefined, null));
         });
 
-        it("Should return the last default value when the value is null and any of the default values are not valid", () => {
+        it("Should return the last default value when the value is NaN and any of the default values are not valid V2", () => {
+            assert.isNull(defaultToAny(NaN, undefined, null));
+        });
+
+
+        it("Should return the last default value when the value is null and any of the default values are not valid V1", () => {
             assert.isUndefined(defaultToAny(null, NaN, undefined));
+        });
+
+        it("Should return the last default value when the value is null and any of the default values are not valid V2", () => {
+            assert.isNaN(defaultToAny(null, undefined, NaN));
         });
 
     });

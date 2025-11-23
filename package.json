@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha test/**/*.js",
-  "coverage": "c8 --all -n src/add.js -n src/eq.js -n src/filter.js -n src/reduce.js -n src/toNumber.js -n src/toString.js -n src/ceil.js -n src/isEmpty.js -n src/defaultToAny.js -n src/get.js --reporter lcov --reporter text mocha"
+    "test": "mocha test/**/*.js --reporter mochawesome",
+    "coverage": "c8 --all -n src/add.js -n src/eq.js -n src/filter.js -n src/reduce.js -n src/toNumber.js -n src/toString.js -n src/ceil.js -n src/isEmpty.js -n src/defaultToAny.js -n src/get.js --reporter lcov --reporter text mocha"
   },
   "author": "",
   "license": "MIT",
@@ -15,5 +15,8 @@
     "chai": "^6.2.1",
     "mocha": "^11.7.5",
     "sinon": "^21.0.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.4"
   }
 }

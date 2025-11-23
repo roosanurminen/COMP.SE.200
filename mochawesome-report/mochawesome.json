@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 10,
-    "tests": 60,
-    "passes": 46,
+    "suites": 11,
+    "tests": 68,
+    "passes": 52,
     "pending": 0,
-    "failures": 14,
-    "start": "2025-11-23T12:16:49.321Z",
-    "end": "2025-11-23T12:16:49.346Z",
-    "duration": 25,
-    "testsRegistered": 60,
-    "passPercent": 76.66666666666667,
+    "failures": 16,
+    "start": "2025-11-23T12:48:57.416Z",
+    "end": "2025-11-23T12:48:57.444Z",
+    "duration": 28,
+    "testsRegistered": 68,
+    "passPercent": 76.47058823529412,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6458eefb-8ead-4e10-8f85-e89dadc0b405",
+      "uuid": "be16a593-4f95-47b4-947c-19373de9fe11",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "eca02a43-b213-4685-b532-8260ed187cc1",
+          "uuid": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
           "title": "Positive testing for add.js",
           "fullFile": "/home/elmeripk/sw_testing_gw/test/addTest.js",
           "file": "/test/addTest.js",
@@ -38,7 +38,7 @@
               "title": "It should sum two positive integers correctly",
               "fullTitle": "Positive testing for add.js It should sum two positive integers correctly",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const augend = 6;\n        const addend = 4;\n        assert.equal(add(augend, addend), 10);",
               "err": {},
-              "uuid": "5af99f66-d810-48ee-ba00-d450d9330bf1",
-              "parentUUID": "eca02a43-b213-4685-b532-8260ed187cc1",
+              "uuid": "7d6dbd43-c372-4ca5-93c6-6f8f13e4a210",
+              "parentUUID": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "const augend = -2;\n        const addend = -8;\n        assert.equal(add(augend, addend), -10);",
               "err": {},
-              "uuid": "67982543-dae4-4f2e-b3ec-7f93eb64547e",
-              "parentUUID": "eca02a43-b213-4685-b532-8260ed187cc1",
+              "uuid": "31baaec8-9515-4f76-a75d-791bb6b02278",
+              "parentUUID": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
               "isHook": false,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "const augend = -4;\n        const addend = 6;\n        assert.equal(add(augend, addend), 2);",
               "err": {},
-              "uuid": "4d59e2af-57df-4407-b8c3-b3b8a4c20c33",
-              "parentUUID": "eca02a43-b213-4685-b532-8260ed187cc1",
+              "uuid": "8e68c33a-2a53-47c9-ad1e-92c14c2021d7",
+              "parentUUID": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
               "isHook": false,
               "skipped": false
             },
@@ -101,8 +101,8 @@
               "context": null,
               "code": "const augend = 3;\n        const addend = 0;\n        assert.equal(add(augend, addend), 3);",
               "err": {},
-              "uuid": "3da22f82-9238-4e26-a012-ed05c2d8803c",
-              "parentUUID": "eca02a43-b213-4685-b532-8260ed187cc1",
+              "uuid": "1e9513ff-02ef-48dc-b05d-2ee97a10b408",
+              "parentUUID": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
               "isHook": false,
               "skipped": false
             },
@@ -110,7 +110,7 @@
               "title": "It should sum zero augend and negative integer correctly",
               "fullTitle": "Positive testing for add.js It should sum zero augend and negative integer correctly",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -119,8 +119,8 @@
               "context": null,
               "code": "const augend = 0;\n        const addend = -2;\n        assert.equal(add(augend, addend), -2);",
               "err": {},
-              "uuid": "7d33b432-43f6-4321-ac6d-7f29e7f105cf",
-              "parentUUID": "eca02a43-b213-4685-b532-8260ed187cc1",
+              "uuid": "175c892d-522d-48b2-912a-a27e43334ee7",
+              "parentUUID": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
               "isHook": false,
               "skipped": false
             },
@@ -137,8 +137,8 @@
               "context": null,
               "code": "const augend = 2.1;\n        const addend = 3.3;\n        assert.equal(add(augend, addend), 5.4);",
               "err": {},
-              "uuid": "6e17c770-7609-4612-9252-39c0593b5d92",
-              "parentUUID": "eca02a43-b213-4685-b532-8260ed187cc1",
+              "uuid": "70ad9338-f1df-4c9f-8fcb-064891a46d64",
+              "parentUUID": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
               "isHook": false,
               "skipped": false
             },
@@ -155,32 +155,32 @@
               "context": null,
               "code": "const augend = 2.1;\n        const addend = 4;\n        assert.equal(add(augend, addend), 6.1);",
               "err": {},
-              "uuid": "cb59f22f-783a-4d82-bbd8-3b20eb66ac72",
-              "parentUUID": "eca02a43-b213-4685-b532-8260ed187cc1",
+              "uuid": "8a33e584-eee3-47a1-8664-261edcafb96e",
+              "parentUUID": "1cddd2de-81c8-4fc2-81b9-143abbae95dd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5af99f66-d810-48ee-ba00-d450d9330bf1",
-            "67982543-dae4-4f2e-b3ec-7f93eb64547e",
-            "4d59e2af-57df-4407-b8c3-b3b8a4c20c33",
-            "3da22f82-9238-4e26-a012-ed05c2d8803c",
-            "7d33b432-43f6-4321-ac6d-7f29e7f105cf",
-            "6e17c770-7609-4612-9252-39c0593b5d92",
-            "cb59f22f-783a-4d82-bbd8-3b20eb66ac72"
+            "7d6dbd43-c372-4ca5-93c6-6f8f13e4a210",
+            "31baaec8-9515-4f76-a75d-791bb6b02278",
+            "8e68c33a-2a53-47c9-ad1e-92c14c2021d7",
+            "1e9513ff-02ef-48dc-b05d-2ee97a10b408",
+            "175c892d-522d-48b2-912a-a27e43334ee7",
+            "70ad9338-f1df-4c9f-8fcb-064891a46d64",
+            "8a33e584-eee3-47a1-8664-261edcafb96e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "89871a0a-3eb7-48ef-bff1-03cabeba9993",
+          "uuid": "85504ab0-b039-466c-9792-3a17b5f8921a",
           "title": "Negative testing for add.js",
           "fullFile": "/home/elmeripk/sw_testing_gw/test/addTest.js",
           "file": "/test/addTest.js",
@@ -204,8 +204,8 @@
                 "estack": "ReferenceError: expect is not defined\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/addTest.js:72:9)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": null
               },
-              "uuid": "28b207c7-e7d7-4d4c-9000-3235a0133f42",
-              "parentUUID": "89871a0a-3eb7-48ef-bff1-03cabeba9993",
+              "uuid": "eea7b145-f87d-4a60-b699-7a6c3d086595",
+              "parentUUID": "85504ab0-b039-466c-9792-3a17b5f8921a",
               "isHook": false,
               "skipped": false
             },
@@ -226,8 +226,8 @@
                 "estack": "ReferenceError: expect is not defined\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/addTest.js:80:9)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": null
               },
-              "uuid": "cbfc0092-075f-4421-bddd-0c0db7b2a5d3",
-              "parentUUID": "89871a0a-3eb7-48ef-bff1-03cabeba9993",
+              "uuid": "900ef554-aa74-4412-a717-a22d7e6fc01e",
+              "parentUUID": "85504ab0-b039-466c-9792-3a17b5f8921a",
               "isHook": false,
               "skipped": false
             },
@@ -248,8 +248,8 @@
                 "estack": "ReferenceError: expect is not defined\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/addTest.js:88:9)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": null
               },
-              "uuid": "e8be84f6-107a-4141-9342-d3623c4bd5c6",
-              "parentUUID": "89871a0a-3eb7-48ef-bff1-03cabeba9993",
+              "uuid": "050f9d0f-3959-46c3-bbe4-a5fb56cdfd32",
+              "parentUUID": "85504ab0-b039-466c-9792-3a17b5f8921a",
               "isHook": false,
               "skipped": false
             },
@@ -270,8 +270,8 @@
                 "estack": "ReferenceError: expect is not defined\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/addTest.js:96:9)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": null
               },
-              "uuid": "dc3d71fd-4659-452c-99f7-b4129ac47a25",
-              "parentUUID": "89871a0a-3eb7-48ef-bff1-03cabeba9993",
+              "uuid": "64adb8e5-b27c-4f10-9849-dc84883c4c95",
+              "parentUUID": "85504ab0-b039-466c-9792-3a17b5f8921a",
               "isHook": false,
               "skipped": false
             }
@@ -279,10 +279,10 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "28b207c7-e7d7-4d4c-9000-3235a0133f42",
-            "cbfc0092-075f-4421-bddd-0c0db7b2a5d3",
-            "e8be84f6-107a-4141-9342-d3623c4bd5c6",
-            "dc3d71fd-4659-452c-99f7-b4129ac47a25"
+            "eea7b145-f87d-4a60-b699-7a6c3d086595",
+            "900ef554-aa74-4412-a717-a22d7e6fc01e",
+            "050f9d0f-3959-46c3-bbe4-a5fb56cdfd32",
+            "64adb8e5-b27c-4f10-9849-dc84883c4c95"
           ],
           "pending": [],
           "skipped": [],
@@ -292,7 +292,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "4cbc946c-2098-4289-bd95-bbb0975992a4",
+          "uuid": "ab2a089f-3d2a-4fef-9349-4205cf7cfdb3",
           "title": "TESTS BASED ON TEST PLAN",
           "fullFile": "/home/elmeripk/sw_testing_gw/test/ceilTest.js",
           "file": "/test/ceilTest.js",
@@ -301,7 +301,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "dce5328b-c7a6-4092-b3ee-c8aa91468ecf",
+              "uuid": "2b2e5821-dab7-4197-8646-d500ee802ec3",
               "title": "Positive test cases for ceil.js",
               "fullFile": "/home/elmeripk/sw_testing_gw/test/ceilTest.js",
               "file": "/test/ceilTest.js",
@@ -321,8 +321,8 @@
                   "context": null,
                   "code": "assert.equal(ceil(6), 6)",
                   "err": {},
-                  "uuid": "24252bfd-e146-4ba2-8a0b-46a990edc705",
-                  "parentUUID": "dce5328b-c7a6-4092-b3ee-c8aa91468ecf",
+                  "uuid": "b4e03950-61d0-40a7-95ef-ef0dffd44eee",
+                  "parentUUID": "2b2e5821-dab7-4197-8646-d500ee802ec3",
                   "isHook": false,
                   "skipped": false
                 },
@@ -339,8 +339,8 @@
                   "context": null,
                   "code": "assert.equal(ceil(3.006), 4);",
                   "err": {},
-                  "uuid": "2f4db11d-f077-4111-a51a-b039f0659e3e",
-                  "parentUUID": "dce5328b-c7a6-4092-b3ee-c8aa91468ecf",
+                  "uuid": "42fc94e6-7161-4869-95cf-edba73c91df3",
+                  "parentUUID": "2b2e5821-dab7-4197-8646-d500ee802ec3",
                   "isHook": false,
                   "skipped": false
                 },
@@ -348,7 +348,7 @@
                   "title": "Should round decimal to correct precision when positive precision is specified",
                   "fullTitle": "TESTS BASED ON TEST PLAN Positive test cases for ceil.js Should round decimal to correct precision when positive precision is specified",
                   "timedOut": false,
-                  "duration": 0,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -357,8 +357,8 @@
                   "context": null,
                   "code": "assert.equal(ceil(6.004, 2), 6.01);",
                   "err": {},
-                  "uuid": "fc253412-dbff-4351-a824-4d2e9ff986ca",
-                  "parentUUID": "dce5328b-c7a6-4092-b3ee-c8aa91468ecf",
+                  "uuid": "ae8232c0-0335-4e0e-abdb-ebefaf058eb6",
+                  "parentUUID": "2b2e5821-dab7-4197-8646-d500ee802ec3",
                   "isHook": false,
                   "skipped": false
                 },
@@ -375,8 +375,8 @@
                   "context": null,
                   "code": "assert.equal(ceil(5, 3), 5);",
                   "err": {},
-                  "uuid": "95164b78-133e-4a45-838f-f6ed79c4eea9",
-                  "parentUUID": "dce5328b-c7a6-4092-b3ee-c8aa91468ecf",
+                  "uuid": "25ae9f88-708e-4371-8b17-ac2a310bc762",
+                  "parentUUID": "2b2e5821-dab7-4197-8646-d500ee802ec3",
                   "isHook": false,
                   "skipped": false
                 },
@@ -393,30 +393,30 @@
                   "context": null,
                   "code": "assert.equal(ceil(3.006, 0), 4);",
                   "err": {},
-                  "uuid": "2cbb8020-b92c-4689-89fc-961f69d78f9b",
-                  "parentUUID": "dce5328b-c7a6-4092-b3ee-c8aa91468ecf",
+                  "uuid": "d9961c46-6cb8-4b2b-8e51-230fd165053c",
+                  "parentUUID": "2b2e5821-dab7-4197-8646-d500ee802ec3",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "24252bfd-e146-4ba2-8a0b-46a990edc705",
-                "2f4db11d-f077-4111-a51a-b039f0659e3e",
-                "fc253412-dbff-4351-a824-4d2e9ff986ca",
-                "95164b78-133e-4a45-838f-f6ed79c4eea9",
-                "2cbb8020-b92c-4689-89fc-961f69d78f9b"
+                "b4e03950-61d0-40a7-95ef-ef0dffd44eee",
+                "42fc94e6-7161-4869-95cf-edba73c91df3",
+                "ae8232c0-0335-4e0e-abdb-ebefaf058eb6",
+                "25ae9f88-708e-4371-8b17-ac2a310bc762",
+                "d9961c46-6cb8-4b2b-8e51-230fd165053c"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 0,
+              "duration": 1,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "ae3c4f55-a239-4333-8844-cb22fe3c939b",
+              "uuid": "c47ea27a-6df8-4591-b5de-4fa3ef670390",
               "title": "Negative test cases for ceil.js",
               "fullFile": "/home/elmeripk/sw_testing_gw/test/ceilTest.js",
               "file": "/test/ceilTest.js",
@@ -427,7 +427,7 @@
                   "title": "Should throw an error when input is not a number",
                   "fullTitle": "TESTS BASED ON TEST PLAN Negative test cases for ceil.js Should throw an error when input is not a number",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 2,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -440,8 +440,8 @@
                     "estack": "AssertionError: expected [Function] to throw Error\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/ceilTest.js:33:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                     "diff": null
                   },
-                  "uuid": "db968796-68eb-4ef6-95e7-4bc4d8be2520",
-                  "parentUUID": "ae3c4f55-a239-4333-8844-cb22fe3c939b",
+                  "uuid": "c5cec578-dcca-4638-8e09-b9f997a1cd20",
+                  "parentUUID": "c47ea27a-6df8-4591-b5de-4fa3ef670390",
                   "isHook": false,
                   "skipped": false
                 },
@@ -462,8 +462,8 @@
                     "estack": "AssertionError: expected [Function] to throw Error\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/ceilTest.js:37:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                     "diff": null
                   },
-                  "uuid": "480ec291-9c6b-48c8-a425-345ca802ecda",
-                  "parentUUID": "ae3c4f55-a239-4333-8844-cb22fe3c939b",
+                  "uuid": "cbf8fd63-ef72-400f-a04f-36336df633a1",
+                  "parentUUID": "c47ea27a-6df8-4591-b5de-4fa3ef670390",
                   "isHook": false,
                   "skipped": false
                 }
@@ -471,12 +471,12 @@
               "suites": [],
               "passes": [],
               "failures": [
-                "db968796-68eb-4ef6-95e7-4bc4d8be2520",
-                "480ec291-9c6b-48c8-a425-345ca802ecda"
+                "c5cec578-dcca-4638-8e09-b9f997a1cd20",
+                "cbf8fd63-ef72-400f-a04f-36336df633a1"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 1,
+              "duration": 2,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -492,7 +492,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "0ed1bdba-4368-4d37-8a27-e403e631641d",
+          "uuid": "3b86e98f-c0ba-428f-be8e-6cfda93a6d21",
           "title": "NEWLY ADDED TESTS FOR ceil.js",
           "fullFile": "/home/elmeripk/sw_testing_gw/test/ceilTest.js",
           "file": "/test/ceilTest.js",
@@ -501,7 +501,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "edbb2f43-e6d7-48df-b343-22846f6ab996",
+              "uuid": "db16ad4a-fc89-431b-bbc9-b7e6f445aeec",
               "title": "Positive test cases for ceil.js",
               "fullFile": "/home/elmeripk/sw_testing_gw/test/ceilTest.js",
               "file": "/test/ceilTest.js",
@@ -521,8 +521,8 @@
                   "context": null,
                   "code": "assert.equal(ceil(6040, -2), 6100);",
                   "err": {},
-                  "uuid": "bc611341-7e30-48ae-85c0-2967297841e0",
-                  "parentUUID": "edbb2f43-e6d7-48df-b343-22846f6ab996",
+                  "uuid": "e8246d7d-3e4c-46c1-86e2-891f4ecf4f02",
+                  "parentUUID": "db16ad4a-fc89-431b-bbc9-b7e6f445aeec",
                   "isHook": false,
                   "skipped": false
                 },
@@ -539,16 +539,16 @@
                   "context": null,
                   "code": "assert.equal(ceil(6.040, -2), 100);",
                   "err": {},
-                  "uuid": "4dde6949-66e0-40a7-9bbc-037acb914f97",
-                  "parentUUID": "edbb2f43-e6d7-48df-b343-22846f6ab996",
+                  "uuid": "fc3a1240-0ddd-488d-9437-1a41f0d2526d",
+                  "parentUUID": "db16ad4a-fc89-431b-bbc9-b7e6f445aeec",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "bc611341-7e30-48ae-85c0-2967297841e0",
-                "4dde6949-66e0-40a7-9bbc-037acb914f97"
+                "e8246d7d-3e4c-46c1-86e2-891f4ecf4f02",
+                "fc3a1240-0ddd-488d-9437-1a41f0d2526d"
               ],
               "failures": [],
               "pending": [],
@@ -559,7 +559,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "0298c363-6edf-4202-b61d-c1eb56b2c604",
+              "uuid": "cce75f7e-1323-4154-84b9-cf941e93de75",
               "title": "Negative test cases for ceil.js",
               "fullFile": "/home/elmeripk/sw_testing_gw/test/ceilTest.js",
               "file": "/test/ceilTest.js",
@@ -570,7 +570,7 @@
                   "title": "Should throw an error when precision is not an integer",
                   "fullTitle": "NEWLY ADDED TESTS FOR ceil.js Negative test cases for ceil.js Should throw an error when precision is not an integer",
                   "timedOut": false,
-                  "duration": 0,
+                  "duration": 1,
                   "state": "failed",
                   "speed": null,
                   "pass": false,
@@ -583,8 +583,8 @@
                     "estack": "AssertionError: expected [Function] to throw Error\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/ceilTest.js:60:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                     "diff": null
                   },
-                  "uuid": "820f61fb-6817-4265-a81b-f39acb7bd7b9",
-                  "parentUUID": "0298c363-6edf-4202-b61d-c1eb56b2c604",
+                  "uuid": "f74988fa-23fa-40c5-932f-09f02e43ed82",
+                  "parentUUID": "cce75f7e-1323-4154-84b9-cf941e93de75",
                   "isHook": false,
                   "skipped": false
                 }
@@ -592,11 +592,11 @@
               "suites": [],
               "passes": [],
               "failures": [
-                "820f61fb-6817-4265-a81b-f39acb7bd7b9"
+                "f74988fa-23fa-40c5-932f-09f02e43ed82"
               ],
               "pending": [],
               "skipped": [],
-              "duration": 0,
+              "duration": 1,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -612,7 +612,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+          "uuid": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
           "title": "Positive test cases for defaultToAny.js",
           "fullFile": "/home/elmeripk/sw_testing_gw/test/defaultToAnyTest.js",
           "file": "/test/defaultToAnyTest.js",
@@ -623,7 +623,7 @@
               "title": "Should return the first value when it is not NaN, null, or undefined",
               "fullTitle": "Positive test cases for defaultToAny.js Should return the first value when it is not NaN, null, or undefined",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -632,8 +632,8 @@
               "context": null,
               "code": "assert.equal(defaultToAny(1, 10, 20), 1);",
               "err": {},
-              "uuid": "39788e30-a299-4d65-9d46-453157781c73",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "abe18cda-8c97-4b00-a268-de3a9e683612",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -650,8 +650,8 @@
               "context": null,
               "code": "assert.equal(defaultToAny(undefined, 10, 20), 10);",
               "err": {},
-              "uuid": "fc39d4c3-6957-4179-9cd4-e7142dbf850c",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "b34bd175-3817-4100-824f-05e617250397",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -672,8 +672,8 @@
                 "estack": "AssertionError: expected NaN to equal 20\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/defaultToAnyTest.js:16:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": "- NaN\n+ 20\n"
               },
-              "uuid": "d37d2b11-3609-4014-9cb9-5e2849f9eaa1",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "5bffd26e-97f8-486d-bbb4-960d8b030cbf",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -694,8 +694,8 @@
                 "estack": "AssertionError: expected NaN to equal 30\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/defaultToAnyTest.js:20:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": "- NaN\n+ 30\n"
               },
-              "uuid": "1530bd4e-d2c9-4f67-8a1f-c72af3fc036c",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "98a075a0-1ce7-44c5-bba3-146bf3df274d",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -716,8 +716,8 @@
                 "estack": "AssertionError: expected NaN to equal 50\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/defaultToAnyTest.js:24:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": "- NaN\n+ 50\n"
               },
-              "uuid": "c50b0509-5568-4c0a-bf32-104e8d474db5",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "13747f19-feb1-41af-b1cd-f5164f878451",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -734,8 +734,8 @@
               "context": null,
               "code": "assert.isNaN(defaultToAny(null, undefined, NaN));",
               "err": {},
-              "uuid": "606c6975-263d-4762-a602-e3e7ef2aa554",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "b205e3ff-610b-4661-a8d8-4b6c828fce4d",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -752,8 +752,8 @@
               "context": null,
               "code": "assert.isNaN(defaultToAny(undefined, null, NaN));",
               "err": {},
-              "uuid": "abf1d2a0-7529-42d5-a001-2135876a249a",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "eebe7124-5e20-4eb0-b087-764ceb5fbb5d",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -774,8 +774,8 @@
                 "estack": "AssertionError: expected NaN to equal null\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/defaultToAnyTest.js:36:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": null
               },
-              "uuid": "469626fd-b4f4-4d85-8d84-ac818622df12",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "854b73bd-9bcd-46c6-a6ca-cecf5c6881be",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -783,7 +783,7 @@
               "title": "Should return the last default value when the value is NaN and any of the default values are not valid V2",
               "fullTitle": "Positive test cases for defaultToAny.js Should return the last default value when the value is NaN and any of the default values are not valid V2",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -796,8 +796,8 @@
                 "estack": "AssertionError: expected NaN to equal null\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/defaultToAnyTest.js:40:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": null
               },
-              "uuid": "809706b6-68d9-4e90-86e7-b448c139ee2b",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "1acd1832-152e-4d33-a51a-012a10b5da5e",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -818,8 +818,8 @@
                 "estack": "AssertionError: expected NaN to equal undefined\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/defaultToAnyTest.js:45:20)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": null
               },
-              "uuid": "50e75b51-5a64-4c45-8bd5-45b4a161e865",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "785fefbe-79e8-4cc2-b65a-21df2b8da292",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             },
@@ -834,29 +834,29 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "assert.isNaN(defaultToAny(null, NaN, NaN));",
+              "code": "assert.isNaN(defaultToAny(null, undefined, NaN));",
               "err": {},
-              "uuid": "52dcad88-0b2a-4dac-95fa-7d1a95463e88",
-              "parentUUID": "3c732643-0a87-4bd9-a6ef-af71959d37b5",
+              "uuid": "c6509a20-7f39-4f62-98d5-9cde8b3c8a6c",
+              "parentUUID": "cd4332eb-da19-4fa4-b037-f019eebce1e8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "39788e30-a299-4d65-9d46-453157781c73",
-            "fc39d4c3-6957-4179-9cd4-e7142dbf850c",
-            "606c6975-263d-4762-a602-e3e7ef2aa554",
-            "abf1d2a0-7529-42d5-a001-2135876a249a",
-            "52dcad88-0b2a-4dac-95fa-7d1a95463e88"
+            "abe18cda-8c97-4b00-a268-de3a9e683612",
+            "b34bd175-3817-4100-824f-05e617250397",
+            "b205e3ff-610b-4661-a8d8-4b6c828fce4d",
+            "eebe7124-5e20-4eb0-b087-764ceb5fbb5d",
+            "c6509a20-7f39-4f62-98d5-9cde8b3c8a6c"
           ],
           "failures": [
-            "d37d2b11-3609-4014-9cb9-5e2849f9eaa1",
-            "1530bd4e-d2c9-4f67-8a1f-c72af3fc036c",
-            "c50b0509-5568-4c0a-bf32-104e8d474db5",
-            "469626fd-b4f4-4d85-8d84-ac818622df12",
-            "809706b6-68d9-4e90-86e7-b448c139ee2b",
-            "50e75b51-5a64-4c45-8bd5-45b4a161e865"
+            "5bffd26e-97f8-486d-bbb4-960d8b030cbf",
+            "98a075a0-1ce7-44c5-bba3-146bf3df274d",
+            "13747f19-feb1-41af-b1cd-f5164f878451",
+            "854b73bd-9bcd-46c6-a6ca-cecf5c6881be",
+            "1acd1832-152e-4d33-a51a-012a10b5da5e",
+            "785fefbe-79e8-4cc2-b65a-21df2b8da292"
           ],
           "pending": [],
           "skipped": [],
@@ -866,7 +866,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+          "uuid": "400dd412-41ac-4d36-95d9-91b1e7609ced",
           "title": "Positive testing for eq.js",
           "fullFile": "/home/elmeripk/sw_testing_gw/test/eqTest.js",
           "file": "/test/eqTest.js",
@@ -886,8 +886,8 @@
               "context": null,
               "code": "const object1 = {'a': 1};\nconst object2 = {'a': 1};\nassert.equal(eq(object1, object2), false);",
               "err": {},
-              "uuid": "23f2e414-99ce-48ab-b9c6-ccfc38fdf25c",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "5251f8fb-3e70-4081-8663-e1bee924aa55",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -904,8 +904,8 @@
               "context": null,
               "code": "const object = {};\nassert.equal(eq(object, object), true);",
               "err": {},
-              "uuid": "c23eed29-aeba-4ec8-93a2-382a02bafaea",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "d9de1bd2-cca4-4ef1-953b-45aeec5b0271",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -922,8 +922,8 @@
               "context": null,
               "code": "const str1 = \"a\";\nconst str2 = \"a\"\nassert.equal(eq(str1, str2), true);",
               "err": {},
-              "uuid": "fe90c552-1782-4d63-843b-b109d3417a58",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "d4f0c646-0782-4625-8738-e8950f0736e7",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -940,8 +940,8 @@
               "context": null,
               "code": "const str1 = \"a\";\nconst str2 = \"b\"\nassert.equal(eq(str1, str2), false);",
               "err": {},
-              "uuid": "c6d979e6-d9a8-43f3-8052-3385883bb036",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "4a9db89b-134e-4a52-b061-468c63d38e86",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -958,8 +958,8 @@
               "context": null,
               "code": "const int1 = 1;\nconst int2 = 1;\nassert.equal(eq(int1, int2), true);",
               "err": {},
-              "uuid": "310cf4b1-3867-49e0-8d2f-928cf92b9f4a",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "cdf5c954-c13d-42ba-a691-3df7d91da550",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -976,8 +976,8 @@
               "context": null,
               "code": "const int1 = 1;\nconst int2 = 4;\nassert.equal(eq(int1, int2), false);",
               "err": {},
-              "uuid": "3e487461-9a42-418d-a0e3-db325151dbfd",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "13dd2b67-812f-4fa2-a718-06e54c586577",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -994,8 +994,8 @@
               "context": null,
               "code": "const int1 = 1;\nconst int2 = -1;\nassert.equal(eq(int1, int2), false);",
               "err": {},
-              "uuid": "1127808b-8d71-4517-9789-792add5adb06",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "13fb9b5d-5d85-43ae-8647-f8db800437bf",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1012,8 +1012,8 @@
               "context": null,
               "code": "const int1 = -0;\nconst int2 = 0;\nassert.equal(eq(int1, int2), true);",
               "err": {},
-              "uuid": "d96fef4c-1fd1-43ff-981e-12234bbfe56c",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "0774a1dc-6a71-419d-a1b7-6348788ba16b",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1030,8 +1030,8 @@
               "context": null,
               "code": "const deci1 = 1.1;\nconst deci2 = 1.1;\nassert.equal(eq(deci1, deci2), true);",
               "err": {},
-              "uuid": "21f144fc-5e73-44d8-8772-11d9ab8d1323",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "62c7a4be-92e1-4f3d-958f-d2fdc8699866",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1048,8 +1048,8 @@
               "context": null,
               "code": "const deci1 = 1.1;\nconst deci2 = 2.1;\nassert.equal(eq(deci1, deci2), false);",
               "err": {},
-              "uuid": "7e13a7b3-5ba6-4b87-af3b-b5d0dbfdf5cb",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "34f57d05-176b-420a-b27c-91d3f3fadacf",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1066,8 +1066,8 @@
               "context": null,
               "code": "const int1 = 1;\nconst deci1 = 2.3;\nassert.equal(eq(int1, deci1), false);",
               "err": {},
-              "uuid": "8ad9ea19-1e5f-4945-a331-13215b26247a",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "3d69b76e-fd7f-4a7c-8449-f47f87c97549",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1084,8 +1084,8 @@
               "context": null,
               "code": "const val1 = NaN;\nconst val2 = NaN;\nassert.equal(eq(val1, val2), true);",
               "err": {},
-              "uuid": "377b6145-d406-4adf-8c82-11277cca239b",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "5517863d-b9c9-4fc4-b8ae-ec4f1db13030",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1102,8 +1102,8 @@
               "context": null,
               "code": "const val1 = undefined\nconst val2 = undefined\nassert.equal(eq(val1, val2), true);",
               "err": {},
-              "uuid": "a6266a3c-82c8-4fcb-ae70-44d114b50107",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "43b9af1c-5f25-49ba-a520-b3d2e1f84dbd",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1120,8 +1120,8 @@
               "context": null,
               "code": "const val1 = null\nconst val2 = null\nassert.equal(eq(val1, val2), true);",
               "err": {},
-              "uuid": "39c31206-ea4e-4321-8280-74f95e48abc0",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "ab603f35-33c2-4710-91da-a8d9b13b2516",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1138,8 +1138,8 @@
               "context": null,
               "code": "const arr = []\nassert.equal(eq(arr, arr), true);",
               "err": {},
-              "uuid": "3d9a86c9-dbdc-4228-956d-9f36c2fe8b06",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "cb2f26c3-e269-405a-bb2d-cb51c42a85f4",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1156,8 +1156,8 @@
               "context": null,
               "code": "const arr1 = [1,2,3,4]\nconst arr2 = [1,2,3]\nassert.equal(eq(arr1, arr2), false);",
               "err": {},
-              "uuid": "cd8a3f7a-2e80-483c-a59d-83888d6f01d6",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "089cf9a6-6293-4c23-930f-430c0ddc31c5",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1174,8 +1174,8 @@
               "context": null,
               "code": "class A {}\nassert.equal(eq(A, A), true);",
               "err": {},
-              "uuid": "aa80a771-be25-4def-8e14-1883988a3e44",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "aa30e301-974a-449d-8a40-a9f7d7985f6b",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1192,8 +1192,8 @@
               "context": null,
               "code": "class A {\n    constructor(value) {\n        this.value = value;\n    }\n}\nclass B {\n    constructor(value) {\n        this.value = value;\n    }\n}\nassert.equal(eq(A, B), false);",
               "err": {},
-              "uuid": "898b4494-c597-40fc-97c0-7734f3d6d68b",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "964ef8de-4e91-4920-97ec-fc429e3d87dd",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1210,8 +1210,8 @@
               "context": null,
               "code": "const bool1 = true\nconst bool2 = true\nassert.equal(eq(bool1, bool2), true);",
               "err": {},
-              "uuid": "6c05ffc6-fde3-4b35-be09-31bd6d17ceb6",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "125ae247-65e4-4dd2-8f02-582b9f5a72ea",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1228,8 +1228,8 @@
               "context": null,
               "code": "const bool1 = false\nconst bool2 = false\nassert.equal(eq(bool1, bool2), true);",
               "err": {},
-              "uuid": "f778cfb1-43aa-421b-bf9d-8d682fcb83b8",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "47b8df6e-76ff-4f39-8601-652b4f7dfb33",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1246,8 +1246,8 @@
               "context": null,
               "code": "const bool1 = true\nconst bool2 = false\nassert.equal(eq(bool1, bool2), false);",
               "err": {},
-              "uuid": "e9f6a7f4-1d5b-4624-b2c8-5e0662fa9983",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "fff904d4-5f5c-40dc-aac6-863c71d294db",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1264,8 +1264,8 @@
               "context": null,
               "code": "const symb1 = Symbol('fool')\nconst symb2 = Symbol('fool')\nassert.equal(eq(symb1, symb2), false);",
               "err": {},
-              "uuid": "69da33c7-cce9-491a-8804-31f479e1bbeb",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "f22841f1-418e-41dd-a86b-b875224f2251",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1273,7 +1273,7 @@
               "title": "It should be true when comparing symbol to itself",
               "fullTitle": "Positive testing for eq.js It should be true when comparing symbol to itself",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -1282,8 +1282,8 @@
               "context": null,
               "code": "const symb = Symbol()\nassert.equal(eq(symb, symb), true);",
               "err": {},
-              "uuid": "78ecc237-89a9-4c25-9ea5-31120d6c5db1",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "8616c303-2dd6-49df-9770-9ff0a7197dc5",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1304,8 +1304,8 @@
                 "estack": "AssertionError: expected true to equal false\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/eqTest.js:144:16)\n    at process.processImmediate (node:internal/timers:511:21)",
                 "diff": "- true\n+ false\n"
               },
-              "uuid": "8c3ac899-4bb3-4e8a-b1b4-e34a1a06dfbb",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "a27edecc-6065-42b6-a8ca-566f603bd8f5",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1322,8 +1322,8 @@
               "context": null,
               "code": "const object = { 'a': 1 }\nconst list = [1,2,3];\nassert.equal(eq(object, list), false);",
               "err": {},
-              "uuid": "8fcf5f67-f937-4471-b683-cd3522fc6076",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "1981020a-b4c0-4f4d-92a9-414320cb9942",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1340,8 +1340,8 @@
               "context": null,
               "code": "class A {};\nconst val = undefined;\nassert.equal(eq(A, val), false);",
               "err": {},
-              "uuid": "98271135-86bd-43f9-9bce-63f971da8ef2",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "c4d0cc71-fabf-4003-b4e2-289e11813fe2",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1349,7 +1349,7 @@
               "title": "It should be false when NaN or null is compared to other types",
               "fullTitle": "Positive testing for eq.js It should be false when NaN or null is compared to other types",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -1358,8 +1358,8 @@
               "context": null,
               "code": "const val1 = NaN;\nconst val2 = null;\nassert.equal(eq(val1, val2), false);",
               "err": {},
-              "uuid": "3214d58e-1203-4e06-b421-fd06dd3dd900",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "73a34fbe-8cce-45c8-82a7-01104c4ff53e",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             },
@@ -1376,48 +1376,229 @@
               "context": null,
               "code": "const val1 = true;\nconst val2 = Symbol('fool');\nassert.equal(eq(val1, val2), false);",
               "err": {},
-              "uuid": "9529f8ce-fe4b-416e-89b7-fff7b7187f9e",
-              "parentUUID": "2fb099cf-ebf3-4707-a35e-2e310382fefd",
+              "uuid": "a8a1bfb4-d5cf-462e-bf04-9f9de5943fbd",
+              "parentUUID": "400dd412-41ac-4d36-95d9-91b1e7609ced",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "23f2e414-99ce-48ab-b9c6-ccfc38fdf25c",
-            "c23eed29-aeba-4ec8-93a2-382a02bafaea",
-            "fe90c552-1782-4d63-843b-b109d3417a58",
-            "c6d979e6-d9a8-43f3-8052-3385883bb036",
-            "310cf4b1-3867-49e0-8d2f-928cf92b9f4a",
-            "3e487461-9a42-418d-a0e3-db325151dbfd",
-            "1127808b-8d71-4517-9789-792add5adb06",
-            "d96fef4c-1fd1-43ff-981e-12234bbfe56c",
-            "21f144fc-5e73-44d8-8772-11d9ab8d1323",
-            "7e13a7b3-5ba6-4b87-af3b-b5d0dbfdf5cb",
-            "8ad9ea19-1e5f-4945-a331-13215b26247a",
-            "377b6145-d406-4adf-8c82-11277cca239b",
-            "a6266a3c-82c8-4fcb-ae70-44d114b50107",
-            "39c31206-ea4e-4321-8280-74f95e48abc0",
-            "3d9a86c9-dbdc-4228-956d-9f36c2fe8b06",
-            "cd8a3f7a-2e80-483c-a59d-83888d6f01d6",
-            "aa80a771-be25-4def-8e14-1883988a3e44",
-            "898b4494-c597-40fc-97c0-7734f3d6d68b",
-            "6c05ffc6-fde3-4b35-be09-31bd6d17ceb6",
-            "f778cfb1-43aa-421b-bf9d-8d682fcb83b8",
-            "e9f6a7f4-1d5b-4624-b2c8-5e0662fa9983",
-            "69da33c7-cce9-491a-8804-31f479e1bbeb",
-            "78ecc237-89a9-4c25-9ea5-31120d6c5db1",
-            "8fcf5f67-f937-4471-b683-cd3522fc6076",
-            "98271135-86bd-43f9-9bce-63f971da8ef2",
-            "3214d58e-1203-4e06-b421-fd06dd3dd900",
-            "9529f8ce-fe4b-416e-89b7-fff7b7187f9e"
+            "5251f8fb-3e70-4081-8663-e1bee924aa55",
+            "d9de1bd2-cca4-4ef1-953b-45aeec5b0271",
+            "d4f0c646-0782-4625-8738-e8950f0736e7",
+            "4a9db89b-134e-4a52-b061-468c63d38e86",
+            "cdf5c954-c13d-42ba-a691-3df7d91da550",
+            "13dd2b67-812f-4fa2-a718-06e54c586577",
+            "13fb9b5d-5d85-43ae-8647-f8db800437bf",
+            "0774a1dc-6a71-419d-a1b7-6348788ba16b",
+            "62c7a4be-92e1-4f3d-958f-d2fdc8699866",
+            "34f57d05-176b-420a-b27c-91d3f3fadacf",
+            "3d69b76e-fd7f-4a7c-8449-f47f87c97549",
+            "5517863d-b9c9-4fc4-b8ae-ec4f1db13030",
+            "43b9af1c-5f25-49ba-a520-b3d2e1f84dbd",
+            "ab603f35-33c2-4710-91da-a8d9b13b2516",
+            "cb2f26c3-e269-405a-bb2d-cb51c42a85f4",
+            "089cf9a6-6293-4c23-930f-430c0ddc31c5",
+            "aa30e301-974a-449d-8a40-a9f7d7985f6b",
+            "964ef8de-4e91-4920-97ec-fc429e3d87dd",
+            "125ae247-65e4-4dd2-8f02-582b9f5a72ea",
+            "47b8df6e-76ff-4f39-8601-652b4f7dfb33",
+            "fff904d4-5f5c-40dc-aac6-863c71d294db",
+            "f22841f1-418e-41dd-a86b-b875224f2251",
+            "8616c303-2dd6-49df-9770-9ff0a7197dc5",
+            "1981020a-b4c0-4f4d-92a9-414320cb9942",
+            "c4d0cc71-fabf-4003-b4e2-289e11813fe2",
+            "73a34fbe-8cce-45c8-82a7-01104c4ff53e",
+            "a8a1bfb4-d5cf-462e-bf04-9f9de5943fbd"
           ],
           "failures": [
-            "8c3ac899-4bb3-4e8a-b1b4-e34a1a06dfbb"
+            "a27edecc-6065-42b6-a8ca-566f603bd8f5"
           ],
           "pending": [],
           "skipped": [],
           "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+          "title": "Positive test cases for filter.js",
+          "fullFile": "/home/elmeripk/sw_testing_gw/test/filterTest.js",
+          "file": "/test/filterTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should filter out elements correctly for simple array",
+              "fullTitle": "Positive test cases for filter.js Should filter out elements correctly for simple array",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const array = [1, 2, 3, 4, 5, 6];\n        const excpectedOutput = [1, 2];\n        const actualOutput = filter(array, (value) => value < 3);\n        //https://stackoverflow.com/questions/51388975/comparing-an-array-object-to-string-using-mocha-chai\n        // https://stackoverflow.com/questions/13225274/the-difference-between-assert-equal-and-assert-deepequal-in-javascript-testing-w\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {},
+              "uuid": "bd91f92c-49dc-4daa-870a-efff5be1a309",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should leave array unchanged if all elements pass the predicate",
+              "fullTitle": "Positive test cases for filter.js Should leave array unchanged if all elements pass the predicate",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const array = [1, 2, 3];\n        const excpectedOutput = [1, 2, 3];\n        const actualOutput = filter(array, (value) => value < 4);\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {},
+              "uuid": "102b1b1c-2fe3-49d6-b983-eda609946f1b",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should return empty array if no elements pass the predicate",
+              "fullTitle": "Positive test cases for filter.js Should return empty array if no elements pass the predicate",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const array = [4, 5, 6];\n        const excpectedOutput = [];\n        const actualOutput = filter(array, (value) => value < 4);\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {
+                "message": "AssertionError: expected [ [] ] to deeply equal []",
+                "estack": "AssertionError: expected [ [] ] to deeply equal []\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/filterTest.js:32:16)\n    at process.processImmediate (node:internal/timers:511:21)",
+                "diff": "- [\n-   []\n- ]\n+ []\n"
+              },
+              "uuid": "604edc60-0e9e-4835-b1eb-7d58bd4e7f0b",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should work correctly with an empty array",
+              "fullTitle": "Positive test cases for filter.js Should work correctly with an empty array",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const array = [];\n        const excpectedOutput = [];\n        const actualOutput = filter(array, (value) => value < 4);\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {
+                "message": "AssertionError: expected [ [] ] to deeply equal []",
+                "estack": "AssertionError: expected [ [] ] to deeply equal []\n    at Context.<anonymous> (file:///home/elmeripk/sw_testing_gw/test/filterTest.js:41:16)\n    at process.processImmediate (node:internal/timers:511:21)",
+                "diff": "- [\n-   []\n- ]\n+ []\n"
+              },
+              "uuid": "8751a222-eb5f-4563-b5ea-7d781aebbf68",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should filter objects based on property values",
+              "fullTitle": "Positive test cases for filter.js Should filter objects based on property values",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const array = [{\"name\": \"Pekka\", \"age\": 25}, {\"name\": \"Jari\", \"age\": 30}, {\"name\": \"Linda\", \"age\": 22}];\n        const excpectedOutput = [{\"name\": \"Pekka\", \"age\": 25}, {\"name\": \"Linda\", \"age\": 22}];\n        const actualOutput = filter(array, (value) => value.age < 30);\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {},
+              "uuid": "b7fa0b20-fb2a-4601-a882-85ce5519cfd0",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should work correctly with object destructuring in predicate",
+              "fullTitle": "Positive test cases for filter.js Should work correctly with object destructuring in predicate",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const array = [{\"name\": \"Pekka\", \"age\": 25}, {\"name\": \"Jari\", \"age\": 30}, {\"name\": \"Linda\", \"age\": 22}];\n         const excpectedOutput = [{\"name\": \"Pekka\", \"age\": 25}, {\"name\": \"Linda\", \"age\": 22}];\n        const actualOutput = filter(array, ({age}) => age < 30);\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {},
+              "uuid": "1d745da8-0017-4f74-8477-cfa8f2dc33bc",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should work correctly when array contains a single element",
+              "fullTitle": "Positive test cases for filter.js Should work correctly when array contains a single element",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const array = [5];\n        const excpectedOutput = [5];\n        const actualOutput = filter(array, (value) => value > 0);\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {},
+              "uuid": "aad91d08-ca43-47ee-a5ea-dc4b5edad7e5",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should work correctly when array contains null, undefined, and NaN values",
+              "fullTitle": "Positive test cases for filter.js Should work correctly when array contains null, undefined, and NaN values",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const array = [null, undefined, NaN, 1, 2, 3];\n        const excpectedOutput = [1, 2, 3];\n        const actualOutput = filter(array, (value) => value > 0);\n        assert.deepEqual(actualOutput, excpectedOutput);",
+              "err": {},
+              "uuid": "d8c7ffae-3e73-49c9-9875-ca5d6d0bdfb9",
+              "parentUUID": "e693f467-8722-45f3-9d70-6c86fb0e8134",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bd91f92c-49dc-4daa-870a-efff5be1a309",
+            "102b1b1c-2fe3-49d6-b983-eda609946f1b",
+            "b7fa0b20-fb2a-4601-a882-85ce5519cfd0",
+            "1d745da8-0017-4f74-8477-cfa8f2dc33bc",
+            "aad91d08-ca43-47ee-a5ea-dc4b5edad7e5",
+            "d8c7ffae-3e73-49c9-9875-ca5d6d0bdfb9"
+          ],
+          "failures": [
+            "604edc60-0e9e-4835-b1eb-7d58bd4e7f0b",
+            "8751a222-eb5f-4563-b5ea-7d781aebbf68"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

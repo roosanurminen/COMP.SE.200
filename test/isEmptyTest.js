@@ -29,7 +29,18 @@ describe("Positive test cases for isEmpty.js", () => {
     it("Should return false if object is not empty", () => {
         assert.equal(isEmpty({'a': 1}), false);
     });
-   
+
+    // Prototype
+    it("Should return true if prototype is empty", () => {
+        function test() {}
+        assert.equal(isEmpty(test.prototype), true)
+    });
+    it("Should return false if prototype is not empty", () => {
+        function test() {}
+        test.prototype = 3
+        assert.equal(isEmpty(test.prototype), false)
+    })
+
     // Strings
     it("Should return true if string is empty", () => {
         assert.equal(isEmpty(""), true);

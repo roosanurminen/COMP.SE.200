@@ -32,6 +32,14 @@ describe("Positive testing for toString.js", () => {
     it("Should return empty array as empty string", () => {
         assert.equal(toString([]), "");
     });
+    it("Should work with nested arrays ", () => {
+        const arr = [[1,2], [3,4]]
+        assert.equal(toString(arr), "1,2,3,4");
+    });
+    it("Should work with nested arrays with null values in it ", () => {
+        const arr = [[1, null], [3, 4]]
+        assert.equal(toString(arr), "1,,3,4");
+    });
 
     // Strings
     it("Should return string as string", () => {
@@ -52,7 +60,7 @@ describe("Positive testing for toString.js", () => {
         assert.equal(toString(false), "false");
     });
 
-    // Maps, Objects, Sets, Nan, infinity
+    // Maps, Objects, Sets
     it("Should work with sets ", () => {
         assert.equal(toString(new Set([1,2])), "[object Set]");
     });
@@ -62,6 +70,8 @@ describe("Positive testing for toString.js", () => {
     it("Should work with objects ", () => {
         assert.equal(toString({'a':1}), "[object Object]");
     });
+
+    // NaN, infinity    
     it("Should return NaN as string ", () => {
         assert.equal(toString(NaN), "NaN");
     });

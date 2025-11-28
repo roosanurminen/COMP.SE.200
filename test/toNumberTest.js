@@ -16,6 +16,12 @@ describe("Positive testing for toNumber.js", () => {
     it("Should return value itself when it's a negative decimal", () => {
         assert.equal(toNumber(-3.2), -3.2);
     });
+    it("Should return Number.MIN_VALUE", () => {
+        assert.equal(toNumber(Number.MIN_VALUE), Number.MIN_VALUE);
+    });
+    it("Should return 0 when value is 0", () => {
+        assert.equal(toNumber(0), 0);
+    });
 
     // Strings
     it("Should return string as int when string value is integer", () => {
@@ -50,6 +56,17 @@ describe("Positive testing for toNumber.js", () => {
         assert.isNaN(toNumber(set));
     });
 
+
+    it("Should return primitive when valueof is primitive", () => {
+        const x = new Number(1);
+        assert.equal(toNumber(x), 1);
+    });
+    it("Should return NaN when an object's valueof is not a function", () => {
+        function test() {};
+        test.valueOf = 123;
+        assert.isNaN(toNumber(test));
+    });
+
     // Infinity
     it("Should return Infinity if value is Infinity", () => {
         assert.equal(toNumber(Infinity), Infinity);
@@ -75,7 +92,7 @@ describe("Positive testing for toNumber.js", () => {
     
     // Octals
     it("Should correctly parse valid octal", () => {
-        assert.equal(toNumber(0o10), 8);
+        assert.equal(toNumber("0o10"), 8);
     });
 
     // These were hinted by the line coverage report of c8
@@ -87,6 +104,9 @@ describe("Positive testing for toNumber.js", () => {
     it("Should convert false to 0", () => {
         assert.equal(toNumber(false), 0);
     });
-    
 
+    //undefined
+    it("Should return NaN when undefined", () => {
+        assert.isNaN(toNumber(undefined));
+    });
 });

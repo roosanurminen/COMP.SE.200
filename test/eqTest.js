@@ -138,7 +138,7 @@ describe("Positive testing for eq.js", () => {
     })
 
 
-    it("It should be false when comparing string to other types", () =>{
+    it("It should be false when comparing string to int with same content", () =>{
         const str1 = "1";
         const int1 = 1;
         assert.equal(eq(str1, int1), false);
